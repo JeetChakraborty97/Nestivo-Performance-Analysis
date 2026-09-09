@@ -76,3 +76,226 @@ review_month_number = MONTH(Reviews[date])
 ```
 
 ## Measures Created
+
+### %_non_varified_has_profile_pic
+```DAX
+%_non_varified_has_profile_pic = DIVIDE([non_varified_has_profile_pic], [host_total], 0)
+```
+
+### %_non_varified_no_profile_pic
+```DAX
+%_non_varified_no_profile_pic = DIVIDE([non_varified_no_profile_pic], [host_total], 0)
+```
+
+### %_varified_has_profile_pic
+```DAX
+%_varified_has_profile_pic = DIVIDE([varified_has_profile_pic], [host_total], 0)
+```
+
+### %_varified_no_profile_pic
+```DAX
+%_varified_no_profile_pic = DIVIDE([varified_no_profile_pic], [host_total], 0)
+```
+
+### avg_accuracy
+```DAX
+avg_accuracy = AVERAGE(Listings[review_scores_accuracy])
+```
+
+### avg_cleanliness
+```DAX
+avg_cleanliness = AVERAGE(Listings[review_scores_cleanliness])
+```
+
+### avg_communications
+```DAX
+avg_communications = AVERAGE(Listings[review_scores_communication])
+```
+
+### avg_location_score
+```DAX
+avg_location_score = AVERAGE(Listings[review_scores_location])
+```
+
+### avg_price
+```DAX
+avg_price = AVERAGE(Listings[price])
+```
+
+### avg_rating
+```DAX
+avg_rating = AVERAGE(Listings[review_scores_rating])
+```
+
+### avg_value_score
+```DAX
+avg_value_score = AVERAGE(Listings[review_scores_value])
+```
+
+### city_rank
+```DAX
+city_rank = 
+RANKX(
+    ALL(Listings[city]),
+    [total_listing],
+    ,
+    DESC
+)
+```
+
+### cumulative_%
+```DAX
+cumulative_% = 
+DIVIDE(
+    [cumulative_listings],
+    CALCULATE([total_listing], ALL(Listings[city]))
+)
+```
+
+### cumulative_listings
+```DAX
+cumulative_listings = 
+VAR current_rank =
+    MAXX(
+        VALUES(Listings[city]),
+        [city_rank]
+    )
+RETURN
+CALCULATE(
+    [total_listing],
+    FILTER(
+        ALL(Listings[city]),
+        [city_rank] <= current_rank
+    )
+)
+```
+
+### entire_place
+```DAX
+entire_place = 
+CALCULATE(
+    COUNT(Listings[listing_id]),
+    Listings[room_type] = "Entire place"
+)
+```
+
+### host_total
+```DAX
+host_total = DISTINCTCOUNT(Listings[host_id])
+```
+
+### hotel_room
+```DAX
+hotel_room = 
+CALCULATE(
+    COUNT(Listings[listing_id]),
+    Listings[room_type] = "Hotel room"
+)
+```
+
+### non_superhost_listings
+```DAX
+non_superhost_listings = 
+CALCULATE(
+    COUNT(Listings[listing_id]),
+    Listings[host_is_superhost] = "f"
+)
+```
+
+### non_varified_has_profile_pic
+```DAX
+non_varified_has_profile_pic = 
+CALCULATE(
+    [host_total],
+    Listings[host_identity_verified] = "f",
+    Listings[host_has_profile_pic] = "t"
+)
+```
+
+### non_varified_no_profile_pic
+```DAX
+non_varified_no_profile_pic = 
+CALCULATE(
+    [host_total],
+    Listings[host_identity_verified] = "f",
+    Listings[host_has_profile_pic] = "f"
+)
+```
+
+### private_room
+```DAX
+private_room = 
+CALCULATE(
+    COUNT(Listings[listing_id]),
+    Listings[room_type] = "Private room"
+)
+```
+
+### shared_room
+```DAX
+shared_room = 
+CALCULATE(
+    COUNT(Listings[listing_id]),
+    Listings[room_type] = "Shared room"
+)
+```
+
+### superhost_listings
+```DAX
+superhost_listings = 
+CALCULATE(
+    COUNT(Listings[listing_id]),
+    Listings[host_is_superhost] = "t"
+)
+```
+
+### total_listing
+```DAX
+total_listing = COUNT(Listings[listing_id])
+```
+
+### varified_has_profile_pic
+```DAX
+varified_has_profile_pic = 
+CALCULATE(
+    [host_total],
+    Listings[host_identity_verified] = "t",
+    Listings[host_has_profile_pic] = "t"
+)
+```
+
+### varified_no_profile_pic
+```DAX
+varified_no_profile_pic = 
+CALCULATE(
+    [host_total],
+    Listings[host_identity_verified] = "t",
+    Listings[host_has_profile_pic] = "f"
+)
+```
+
+### %_of_monthly_reviews
+```DAX
+%_of_monthly_reviews = 
+DIVIDE(
+    [total_reviews],
+    CALCULATE(
+        [total_reviews],
+        ALLSELECTED(Listings[city])
+        )
+)
+```
+
+### distinct_reviewers
+```DAX
+distinct_reviewers = DISTINCTCOUNT(Reviews[reviewer_id])
+```
+
+### total_reviews
+```DAX
+total_reviews = SUM(Reviews[review_id])
+```
+
+## Conclusion
+
+Nestivo has scale, a meaningful presence across global cities, strong guest ratings in several markets, a clear pricing ladder, and a generally healthy trust base. The main opportunity is not simply to grow listings further, but to improve consistency across cities, close weaker service gaps, and manage markets with a more localised strategy.
