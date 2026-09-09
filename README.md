@@ -45,3 +45,20 @@ Current business challenges include:
 * Trust & Safety teams require visibility into host verification levels and profile completeness to strengthen customer confidence and platform security.  
 
 To address these challenges, Nestivo has commissioned an interactive Power BI dashboard that provides executives and business teams with a comprehensive view of marketplace performance, customer experience, pricing behaviour, and host trust, enabling faster and more informed business decisions.
+
+## Power BI Knowledge Applied
+
+* Data Cleaning in Power Query
+
+Here is the image:
+<img width="1919" height="1031" alt="Data Cleaning in Power Query" src="https://github.com/user-attachments/assets/99cd834f-92ab-4d85-9965-40c328c9f221" />
+
+* DAX
+* Data Modelling
+Here is the image:
+<img width="1377" height="690" alt="Data Modelling" src="https://github.com/user-attachments/assets/ca3ebf27-2238-43c6-ab8e-e3ab183e337c" />
+
+* KPI Creation
+* Data visualisation
+* Storytelling through Data
+
