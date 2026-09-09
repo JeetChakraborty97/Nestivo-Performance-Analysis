@@ -33,7 +33,7 @@ Purpose: Overall ratings, seasonality and trust
 
 ## Background
 
-Nestivo is a fictional online vacation rental platform that connects guests with hosts offering short-term accommodations across major cities worldwide. Similar to Airbnb, the platform supports multiple property types, room categories, and hosts while serving millions of guest interactions through bookings and reviews. As Nestivo expands its marketplace across global destinations, leadership requires a centralised analytics solution to monitor platform growth, understand market concentration, evaluate pricing strategies, measure guest satisfaction, and assess host trust. Without an integrated reporting system, identifying high-performing cities, monitoring service quality, and making data-driven strategic decisions becomes increasingly challenging.
+Nestivo is a fictional online vacation rental platform that connects guests with hosts offering short-term lodgings across major cities worldwide. Similar to Airbnb, the platform supports multiple property types, room categories, and hosts while serving millions of guest interactions through bookings and reviews. As Nestivo expands its marketplace across global destinations, leadership requires a centralised analytics solution to monitor platform growth, understand market concentration, evaluate pricing strategies, measure guest satisfaction, and assess host trust. Without an integrated reporting system, identifying high-performing cities, monitoring service quality, and making data-driven strategic decisions becomes increasingly challenging.
 
 Current business challenges include: 
 
