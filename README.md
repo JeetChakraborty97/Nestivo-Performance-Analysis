@@ -63,3 +63,16 @@ Here is the image:
 * Data visualisation
 * Storytelling through Data
 
+## Custom Columns Created
+
+### review_month
+```DAX
+review_month = FORMAT(Reviews[date], "MMM")
+```
+
+### review_month_number
+```DAX
+review_month_number = MONTH(Reviews[date])
+```
+
+## Measures Created
