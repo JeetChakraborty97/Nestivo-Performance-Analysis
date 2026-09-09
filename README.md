@@ -27,6 +27,6 @@ Purpose: Overall ratings, seasonality and trust
 
 ## All Links
 
-**Live Dashboard Link:** https://app.fabric.microsoft.com/view?r=eyJrIjoiMGNlMzVmMTMtMzQ5My00NjUxLTk3YjUtMjU0MDdhNzdiM2FhIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9
+**Live Dashboard Link:** [Click Here](https://app.fabric.microsoft.com/view?r=eyJrIjoiMGNlMzVmMTMtMzQ5My00NjUxLTk3YjUtMjU0MDdhNzdiM2FhIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
 
-**Google Drive Link (contains all files):** https://drive.google.com/drive/folders/1S1itJZvgDRQhSqb1uhVbV36ItJTvOQiU?usp=sharing
+**Google Drive Link (contains all files):** [Click Here](https://drive.google.com/drive/folders/1S1itJZvgDRQhSqb1uhVbV36ItJTvOQiU?usp=sharing)
