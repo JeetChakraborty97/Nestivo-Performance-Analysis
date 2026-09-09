@@ -30,3 +30,18 @@ Purpose: Overall ratings, seasonality and trust
 **Live Dashboard Link:** [Click Here](https://app.fabric.microsoft.com/view?r=eyJrIjoiMGNlMzVmMTMtMzQ5My00NjUxLTk3YjUtMjU0MDdhNzdiM2FhIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
 
 **Google Drive Link (contains all files):** [Click Here](https://drive.google.com/drive/folders/1S1itJZvgDRQhSqb1uhVbV36ItJTvOQiU?usp=sharing)
+
+## Background
+
+Nestivo is a fictional online vacation rental platform that connects guests with hosts offering short-term accommodations across major cities worldwide. Similar to Airbnb, the platform supports multiple property types, room categories, and hosts while serving millions of guest interactions through bookings and reviews. As Nestivo expands its marketplace across global destinations, leadership requires a centralised analytics solution to monitor platform growth, understand market concentration, evaluate pricing strategies, measure guest satisfaction, and assess host trust. Without an integrated reporting system, identifying high-performing cities, monitoring service quality, and making data-driven strategic decisions becomes increasingly challenging.
+
+Current business challenges include: 
+
+* Leadership lacks a unified dashboard that combines platform scale, growth, pricing, customer satisfaction, and trust metrics into a single executive view.  
+* Business managers cannot quickly identify which cities contribute the most listings or determine whether marketplace supply is overly concentrated.  
+* Pricing teams need better visibility into pricing differences across accommodation types to support revenue optimisation and market segmentation.  
+* Customer Experience teams require a simple way to compare guest ratings across cities and identify the service dimensions affecting overall satisfaction.  
+* Operations teams need insights into seasonal demand patterns to support localised planning instead of relying on a single global strategy.  
+* Trust & Safety teams require visibility into host verification levels and profile completeness to strengthen customer confidence and platform security.  
+
+To address these challenges, Nestivo has commissioned an interactive Power BI dashboard that provides executives and business teams with a comprehensive view of marketplace performance, customer experience, pricing behaviour, and host trust, enabling faster and more informed business decisions.
