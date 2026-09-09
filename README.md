@@ -55,6 +55,7 @@ Here is the image:
 
 * DAX
 * Data Modelling
+
 Here is the image:
 <img width="1377" height="690" alt="Data Modelling" src="https://github.com/user-attachments/assets/ca3ebf27-2238-43c6-ab8e-e3ab183e337c" />
 
